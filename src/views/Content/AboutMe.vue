@@ -1,7 +1,7 @@
 <template>
     
     <div id="about-me" class="information-div">
-        <h2 class="green-underlined">About Me</h2>
+        <h2 class="green-underlined mb-4">About Me</h2>
         <div class="flex flex-1 justify-center items-center">
             <div class="flex flex-wrap justify-center items-start">
                 <AboutMeCard
