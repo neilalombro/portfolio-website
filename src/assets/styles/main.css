@@ -22,7 +22,8 @@
     color: #fff;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #links {
@@ -42,10 +43,6 @@
     justify-content: space-between;
     padding: 10px 15px;
 }
-
-
-
-
 
 #content {
     flex: 1;
@@ -69,13 +66,13 @@ html {
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: bold;
-    padding-bottom: 2.5vw;
+    padding-bottom: 2rem;
 }
 
-h2 {
-    font-size: 18px; 
+a, h2 {
+    font-size: 14px; 
 }
 
 h2.underlined {
@@ -97,43 +94,38 @@ h2.bold-underlined {
 }
 
 p {
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 p.centred {
     text-align: center;
 }
 
-
-
 .rounded-image {
-    width: 15vw;
-    height: 15vw;
+    width: 50vw;
+    height: 50vw;
     max-width: 256px;
     max-height: 256px;
     border-radius: 50%;
 }
 
 .about-me-image {
-    width: 50%;
+    width: 25%;
     height: auto;
     margin-bottom: 75px;
 }
 
-
-
-
-#home {
+/* #home {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
-}
+} */
 
-#information-div {
-    height: 100%;
+.information-div {
+    min-height: 100%;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -163,4 +155,13 @@ p.centred {
     border-radius: 10px;
     width: 100%;
     height: 40%;
+}
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; 
+}
+
+.scroll-item {
+    scroll-snap-align: start;
 }

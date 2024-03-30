@@ -1,7 +1,7 @@
 <template>
-    <Banner />
-    <Content />
-    <Contact />
+    <Banner class="dark:text-white" />
+    <Content class="dark:text-white" />
+    <Contact class="dark:text-white" />
 </template>
 
 <script setup lang="ts">

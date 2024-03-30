@@ -1,5 +1,5 @@
 <template>
-    <div id="information-div">
+    <div id="projects" class="information-div">
         <h2 class="green-underlined">Projects</h2>
 
         <ProjectCard />

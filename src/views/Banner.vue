@@ -1,19 +1,65 @@
 <template>
     <div id="banner">
-        <h2 class="bold">
+        <a class="font-bold hover:cursor-pointer" @click.prevent="scrollToSection('#home')">
             Neil Alombro
-        </h2>
+        </a>
 
         <div id="links">
-            <h2>About Me</h2>
-            <h2>Experience</h2>
-            <h2>Portfolio</h2>
+            <a :class="{ 'underline': currentSection === '#about-me' }" class="hover:cursor-pointer" @click.prevent="scrollToSection('#about-me')">About Me</a>
+            <a :class="{ 'underline': currentSection === '#experience' }" class="hover:cursor-pointer" @click.prevent="scrollToSection('#experience')">Experience</a>
+            <a :class="{ 'underline': currentSection === '#projects' }" class="hover:cursor-pointer" @click.prevent="scrollToSection('#projects')">Projects</a>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-// TODO: make Neil Alombro scroll up to the top
-// TODO: make the links scroll to their respective place
+import { ref, onMounted, onUnmounted } from 'vue';
+import { throttle } from 'lodash';
+
+const currentSection = ref('');
+
+const scrollToSection = (targetSection: string) => {
+    const targetElement = document.querySelector(targetSection);
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+};
+
+const handleScroll = () => {
+    const scrollContainer = document.getElementById('content');
+    if (scrollContainer) {
+        const scrollContainerTop = scrollContainer.getBoundingClientRect().top;
+        console.log(`scrollContainerTop: ${scrollContainerTop}`)
+        const sections = ['#home', '#about-me', '#experience', '#projects'];
+        for (const section of sections) {
+            const element = scrollContainer.querySelector(section);
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                console.log(section)
+                console.log(rect.top)
+                console.log(rect.bottom)
+
+                // TODO: A small offset of 1, need to debug further
+                if (rect.top <= (scrollContainerTop + 1) && rect.bottom > (scrollContainerTop + 1)) {
+                    currentSection.value = section;
+                    break;
+                }
+            }
+        }
+    }
+};
+
+const throttledHandleScroll = throttle(handleScroll, 500);
+
+onMounted(() => {
+    document.getElementById('content')?.addEventListener('scroll', throttledHandleScroll);
+});
+
+onUnmounted(() => {
+    document.getElementById('content')?.removeEventListener('scroll', throttledHandleScroll);
+});
 
 </script>

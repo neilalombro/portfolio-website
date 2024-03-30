@@ -1,7 +1,7 @@
 <template>
-    <div id="information-div">
+    <div id="experience" class="information-div">
         <h2 class="green-underlined">Work Experience</h2>
-
+            hello
         <ProjectCard />
     </div>
 </template>

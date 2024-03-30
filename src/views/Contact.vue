@@ -8,15 +8,15 @@
 
         <div id="links">
             <a href="https://nz.linkedin.com/in/neil-alombro">
-                <img src="./../assets/images/linkedin.png" alt="SVG 1">
+                <img src="./../assets/images/contacts/linkedin.png" alt="LinkedIn" class="dark:filter dark:invert">
             </a>
 
             <a href="https://github.com/neilalombro">
-                <img src="./../assets/images/github.png" alt="SVG 1">
+                <img src="./../assets/images/contacts/github.png" alt="GitHub icon" class="dark:filter dark:invert">
             </a>
 
             <a href="mailto:neilalombro@gmail.com">
-                <img src="./../assets/images/email.png" alt="SVG 1">
+                <img src="./../assets/images/contacts/email.png" alt="Envelope icon" class="dark:filter dark:invert">
             </a>
         </div>
     </div>

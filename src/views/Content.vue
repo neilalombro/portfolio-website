@@ -1,16 +1,19 @@
 <template>
-    <div id="content">
-        <Home />
-        <AboutMe />
-        <Experience />
-        <Portfolio />
+
+    <div id="content" class="scroll-container">
+        <Home class="scroll-item"/>
+        <AboutMe class="scroll-item"/>
+        <Experience class="scroll-item"/>
+        <Projects class="scroll-item"/>
     </div>
+  
 </template>
 
 <script setup lang="ts">
+
 import Home from './Content/Home.vue';
 import AboutMe from './Content/AboutMe.vue';
 import Experience from './Content/Experience.vue';
-import Portfolio from './Content/Portfolio.vue';
+import Projects from './Content/Projects.vue';
 
 </script>
