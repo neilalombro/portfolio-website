@@ -1,7 +1,7 @@
 <template>
     
     <div id="about-me" class="information-div">
-        <h2 class="green-underlined mb-4">About Me</h2>
+        <h2 class="green-heading underline font-bold text-lg mb-6">About Me</h2>
         <div class="flex flex-1 justify-center items-center">
             <div class="flex flex-wrap justify-center items-start">
                 <AboutMeCard
@@ -29,12 +29,12 @@ const aboutMeCards = [
   {
     imageName: "volunteer.png",
     imageAlt: "Two hands shaking emoji",
-    aboutDescription: "Involved in university initiatives such as the Student Volunteer Army and QCanterbury (UC Rainbow Club) executives."
+    aboutDescription: "Involved in university initiatives in the Student Volunteer Army and QCanterbury (UC Rainbow Club) executives."
   },
   {
     imageName: "tennis.png",
     imageAlt: "Tennis ball emoji",
-    aboutDescription: "Enjoying socializing through sports like tennis and badminton, always up for a friendly match in my free time."
+    aboutDescription: "Enjoy socializing through sports like tennis and badminton, always up for a friendly match in my free time."
   },
   {
     imageName: "work.png",

@@ -1,6 +1,6 @@
 <template>
     <div id="home" class="h-full flex flex-col justify-center items-center pb-8">
-        <h1> print(“👋 future boss!”) </h1>
+        <h1> print(“<span class="wave">👋</span> future boss!”) </h1>
 
         <div class="xs:w-3/4 sm:w-3/4 xl:w-1/2 md:flex items-center justify-center">
             <img src="./../../assets/images/portrait.jpeg" class="rounded-image mx-auto">
@@ -17,3 +17,7 @@
 <script setup lang="ts">
 
 </script>
+
+<style scoped>
+
+</style>

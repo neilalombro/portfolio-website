@@ -72,15 +72,14 @@ h1 {
 }
 
 a, h2 {
-    font-size: 14px; 
+    font-size: 18px; 
 }
 
 h2.underlined {
     text-decoration: underline;
 }
 
-h2.green-underlined {
-    text-decoration: underline;
+.green-heading {
     color: #8F9E8B;
 }
 
@@ -164,4 +163,20 @@ p.centred {
 
 .scroll-item {
     scroll-snap-align: start;
+}
+
+.wave {
+    display: inline-block;
+    transform-origin: 70% 70%;
+    animation: wave 3.5s infinite;
+}
+
+@keyframes wave {
+    0%, 60%, 100% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
 }

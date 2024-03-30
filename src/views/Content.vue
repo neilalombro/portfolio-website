@@ -5,6 +5,7 @@
         <AboutMe class="scroll-item"/>
         <Experience class="scroll-item"/>
         <Projects class="scroll-item"/>
+        <Goodbye class="scroll-item"/>
     </div>
   
 </template>
@@ -15,5 +16,6 @@ import Home from './Content/Home.vue';
 import AboutMe from './Content/AboutMe.vue';
 import Experience from './Content/Experience.vue';
 import Projects from './Content/Projects.vue';
+import Goodbye from './Content/Goodbye.vue';
 
 </script>

@@ -32,16 +32,11 @@ const handleScroll = () => {
     const scrollContainer = document.getElementById('content');
     if (scrollContainer) {
         const scrollContainerTop = scrollContainer.getBoundingClientRect().top;
-        console.log(`scrollContainerTop: ${scrollContainerTop}`)
-        const sections = ['#home', '#about-me', '#experience', '#projects'];
+        const sections = ['#home', '#about-me', '#experience', '#projects', '#goodbye'];
         for (const section of sections) {
             const element = scrollContainer.querySelector(section);
             if (element) {
                 const rect = element.getBoundingClientRect();
-                console.log(section)
-                console.log(rect.top)
-                console.log(rect.bottom)
-
                 // TODO: A small offset of 1, need to debug further
                 if (rect.top <= (scrollContainerTop + 1) && rect.bottom > (scrollContainerTop + 1)) {
                     currentSection.value = section;
