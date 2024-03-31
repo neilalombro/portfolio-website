@@ -4,9 +4,9 @@
         <div class="rounded-3xl mt-0 mb-6 ml-4 mr-4 p-4" style="background-color: #42473F;">
             <p class="text-md font-bold text-white pl-4 pb-2"> {{ experienceType }}</p>
             <div class="flex xs:flex-col lg:flex-row">
-                <div class="flex justify-center items-center lg:pl-4 lg:pb-2">
-                    <div class="aspect-w-1 aspect-h-1 w-60">
-                        <img :src="`/src/assets/images/company_logos/${imageName}`" :alt="imageAlt" class="object-cover w-full rounded-3xl" />
+                <div class="flex-shrink-0 lg:pl-4 lg:pb-2">
+                    <div class="flex justify-center items-center">
+                        <img :src="`/src/assets/images/company_logos/${imageName}`" :alt="imageAlt" class="h-auto w-56 rounded-3xl" />
                     </div>
                 </div>
                 <div class="flex flex-col ml-4 p-4">

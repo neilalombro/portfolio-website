@@ -9,7 +9,12 @@
                     </div>
                 </div>
                 <div class="flex flex-col ml-4 p-4">
-                    <h3 class="text-4xl font-bold text-white">{{ projectTitle }}</h3>
+                    <div class="flex flex-row items-center">
+                        <h3 class="text-4xl font-bold text-white">{{ projectTitle }}</h3>
+                        <a v-if="githubLink" :href="githubLink" target="_blank">
+                            <img src="./../assets/images/contacts/github.png" alt="GitHub icon" class="invert h-8 ml-2">
+                        </a>
+                    </div>
                     <div class="flex flex-wrap mt-2">
                         <span v-for="tag in tags" class="text-sm text-black rounded-full px-6 py-1 mr-1 mb-1" style="background-color: #DAE3D7;">{{ tag }}</span>
                         <span v-for="subtag in subtags" class="text-sm text-black rounded-full px-6 py-1 mr-1 mb-1" style="background-color: #838F80;">{{ subtag }}</span>
@@ -53,6 +58,10 @@ defineProps({
     description: {
         type: String,
         required: true,
+    },
+    githubLink: {
+        type: String,
+        required: false,
     },
 });
 
