@@ -1,6 +1,6 @@
 <template>
     <div id="banner">
-        <a class="font-bold hover:cursor-pointer" @click.prevent="scrollToSection('#home')">
+        <a class="font-bold hover:cursor-pointer" @click.prevent="scrollToSection('#introduction')">
             Neil Alombro
         </a>
 
@@ -32,7 +32,7 @@ const handleScroll = () => {
     const scrollContainer = document.getElementById('content');
     if (scrollContainer) {
         const scrollContainerTop = scrollContainer.getBoundingClientRect().top;
-        const sections = ['#home', '#about-me', '#experience', '#projects', '#goodbye'];
+        const sections = ['#introduction', '#about-me', '#experience', '#projects', '#goodbye'];
         for (const section of sections) {
             const element = scrollContainer.querySelector(section);
             if (element) {

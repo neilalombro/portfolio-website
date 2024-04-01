@@ -1,16 +1,13 @@
 <template>
-    <SpeedInsights />
 
-    <Banner class="dark:text-white" />
-    <Content class="dark:text-white" />
-    <Contact class="dark:text-white" />
+    <SpeedInsights />
+    <RouterView />
+    
 </template>
 
 <script setup lang="ts">
-import Banner from './views/Banner.vue';
-import Content from './views/Content.vue'
-import Contact from './views/Contact.vue'
 
 import { SpeedInsights } from "@vercel/speed-insights/vue"
+import { RouterView } from "vue-router"
 
 </script>
