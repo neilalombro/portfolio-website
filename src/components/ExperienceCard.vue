@@ -9,7 +9,7 @@
                         <img :src="`/images/company_logos/${imageName}`" :alt="imageAlt" class="h-auto w-56 rounded-3xl" />
                     </div>
                 </div>
-                <div class="flex flex-col ml-4 p-4">
+                <div class="flex flex-col lg:ml-4 p-4">
                     <h3 class="text-4xl font-bold text-white">{{ companyName }}</h3>
                     <p class="text-2xl font-bold text-white">{{ roleName }}</p>
                     <p class="text-md text-white">{{ date }}</p>

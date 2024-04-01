@@ -8,7 +8,7 @@
                         <img :src="`/images/project_screenshots/${imageName}`" :alt="imageAlt" class="h-auto w-96" />
                     </div>
                 </div>
-                <div class="flex flex-col ml-4 p-4">
+                <div class="flex flex-col lg:ml-4 p-4">
                     <div class="flex flex-row items-center">
                         <h3 class="text-4xl font-bold text-white">{{ projectTitle }}</h3>
                         <a v-if="githubLink" :href="githubLink" target="_blank">
