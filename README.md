@@ -2,9 +2,9 @@
 
 This is my personal website with information about myself, work experience, and personal projects.
 
-Currently deployed on: (insert URL here)
+Currently deployed on: [neilalombro.com](http://www.neilalombro.com)
 
-![Personal Website Screenshot](./src/assets/images/project_screenshots/personal_website.png)
+![Personal Website Screenshot](./public/images/project_screenshots/personal_website.png)
 
 ## Technologies Used
 
