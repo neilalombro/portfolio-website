@@ -182,3 +182,13 @@ p.centred {
         transform: rotate(-10deg);
     }
 }
+
+.alternate-section {
+    background-color: #F0FFF0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .alternate-section {
+        background-color: #211f1f;
+    }
+}
