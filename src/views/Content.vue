@@ -2,9 +2,9 @@
 
     <div id="content" class="scroll-container">
         <Home class="scroll-item"/>
-        <AboutMe class="scroll-item"/>
+        <AboutMe class="scroll-item" style="background-color: #F0FFF0;"/>
         <Experience class="scroll-item"/>
-        <Projects class="scroll-item"/>
+        <Projects class="scroll-item" style="background-color: #F0FFF0;"/>
         <Goodbye class="scroll-item"/>
     </div>
   
