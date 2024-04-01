@@ -5,9 +5,9 @@
         </a>
 
         <div id="links">
-            <a :class="{ 'underline': currentSection === '#about-me' }" class="hover:cursor-pointer" @click.prevent="scrollToSection('#about-me')">About Me</a>
-            <a :class="{ 'underline': currentSection === '#experience' }" class="hover:cursor-pointer" @click.prevent="scrollToSection('#experience')">Experience</a>
-            <a :class="{ 'underline': currentSection === '#projects' }" class="hover:cursor-pointer" @click.prevent="scrollToSection('#projects')">Projects</a>
+            <a :class="{ 'underline': currentSection === '#about-me' }" class="hover:cursor-pointer hidden sm:block" @click.prevent="scrollToSection('#about-me')">About Me</a>
+            <a :class="{ 'underline': currentSection === '#experience' }" class="hover:cursor-pointer hidden sm:block" @click.prevent="scrollToSection('#experience')">Experience</a>
+            <a :class="{ 'underline': currentSection === '#projects' }" class="hover:cursor-pointer hidden sm:block" @click.prevent="scrollToSection('#projects')">Projects</a>
         </div>
     </div>
 </template>
