@@ -15,6 +15,12 @@
     color: #000;
 }
 
+@supports (height: 100dvh) {
+    #app {
+        height: 100dvh;
+    }
+}
+
 #banner {
     display: flex;
     flex: 0 0 5%;
@@ -26,10 +32,10 @@
     padding-right: 15px;
 }
 
-#links {
-    display: flex;
-    gap: 30px;
-    margin-left: auto;
+#content {
+    flex: 1;
+    overflow-y: auto;
+    align-items: center;
 }
 
 #contact {
@@ -40,10 +46,10 @@
     padding: 10px 15px;
 }
 
-#content {
-    flex: 1;
-    overflow-y: auto;
-    align-items: center;
+#links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
 }
 
 #introduction-card {
