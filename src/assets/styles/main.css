@@ -32,10 +32,6 @@
     margin-left: auto;
 }
 
-#links img {
-    height: 30px;
-}
-
 #contact {
     display: flex;
     flex: 0 0 5%;
