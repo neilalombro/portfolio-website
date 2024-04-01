@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full">
+    <div class="w-full text-md">
         <div class="rounded-3xl mt-0 mb-6 ml-4 mr-4 p-4" style="background-color: #42473F;">
             <p class="text-md font-bold text-white pl-4 pb-2"> {{ experienceType }}</p>
             <div class="flex xs:flex-col lg:flex-row">

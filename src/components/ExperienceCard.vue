@@ -10,14 +10,14 @@
                     </div>
                 </div>
                 <div class="flex flex-col lg:ml-4 p-4">
-                    <h3 class="text-4xl font-bold text-white">{{ companyName }}</h3>
-                    <p class="text-2xl font-bold text-white">{{ roleName }}</p>
-                    <p class="text-md text-white">{{ date }}</p>
+                    <h3 class="text-xl sm:text-4xl font-bold text-white">{{ companyName }}</h3>
+                    <p class="text-lg sm:text-2xl font-bold text-white">{{ roleName }}</p>
+                    <p class="text-sm sm:text-md text-white">{{ date }}</p>
                     <div class="flex flex-wrap mt-2">
-                        <span v-for="tag in tags" class="text-sm text-black rounded-full px-6 py-1 mr-1 mb-1" style="background-color: #DAE3D7;">{{ tag }}</span>
-                        <span v-for="subtag in subtags" class="text-sm text-black rounded-full px-6 py-1 mr-1 mb-1" style="background-color: #838F80;">{{ subtag }}</span>
+                        <span v-for="tag in tags" class="text-xs sm:text-sm text-black rounded-full px-6 py-1 mr-1 mb-1" style="background-color: #DAE3D7;">{{ tag }}</span>
+                        <span v-for="subtag in subtags" class="text-xs sm:text-sm text-black rounded-full px-6 py-1 mr-1 mb-1" style="background-color: #838F80;">{{ subtag }}</span>
                     </div>
-                    <p class="text-md text-white mt-1">{{ description }}</p>
+                    <p class="text-sm sm:text-md text-white mt-1">{{ description }}</p>
                 </div>
             </div>
         </div>
