@@ -39,7 +39,7 @@ const aboutMeCards = [
   {
     imageName: "work.png",
     imageAlt: "Briefcase emoji",
-    aboutDescription: "Seeking internship opportunities for the summer of 2024/2025 and aiming for graduate roles in 2025."
+    aboutDescription: "Seeking internship opportunities for the summer of 2024/2025 and aiming for graduate roles in 2026."
   }
 ];
 
