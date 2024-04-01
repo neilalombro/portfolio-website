@@ -6,7 +6,7 @@
             <div class="flex xs:flex-col lg:flex-row">
                 <div class="flex-shrink-0 lg:pl-4 lg:pb-2">
                     <div class="flex justify-center items-center">
-                        <img :src="`./../assets/images/company_logos/${imageName}`" :alt="imageAlt" class="h-auto w-56 rounded-3xl" />
+                        <img :src="`/images/company_logos/${imageName}`" :alt="imageAlt" class="h-auto w-56 rounded-3xl" />
                     </div>
                 </div>
                 <div class="flex flex-col ml-4 p-4">

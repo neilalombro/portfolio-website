@@ -3,7 +3,7 @@
         <h1> print(“<span class="wave">👋</span> future boss!”) </h1>
 
         <div class="xs:w-3/4 sm:w-3/4 xl:w-1/2 md:flex items-center justify-center">
-            <img src="./../../assets/images/portrait.jpeg" class="rounded-image mx-auto">
+            <img src="/images/portrait.jpeg" class="rounded-image mx-auto">
             <div class="xs:mt-10 md:ml-20 md:mt-0">
                 <p> My name is Neil Alombro and I am a Software Engineering student at the University of Canterbury. </p>
                 <br>

@@ -5,14 +5,14 @@
             <div class="flex xs:flex-col lg:flex-row">
                 <div class="flex-shrink-0 lg:pl-4 lg:pb-2">
                     <div class="flex justify-center items-center">
-                        <img :src="`./../assets/images/project_screenshots/${imageName}`" :alt="imageAlt" class="h-auto w-96" />
+                        <img :src="`/images/project_screenshots/${imageName}`" :alt="imageAlt" class="h-auto w-96" />
                     </div>
                 </div>
                 <div class="flex flex-col ml-4 p-4">
                     <div class="flex flex-row items-center">
                         <h3 class="text-4xl font-bold text-white">{{ projectTitle }}</h3>
                         <a v-if="githubLink" :href="githubLink" target="_blank">
-                            <img src="./../assets/images/contacts/github.png" alt="GitHub icon" class="invert h-8 ml-2">
+                            <img src="`/images/contacts/github.png`" alt="GitHub icon" class="invert h-8 ml-2">
                         </a>
                     </div>
                     <div class="flex flex-wrap mt-2">
@@ -27,7 +27,6 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps({
     experienceType: {
         type: String,
