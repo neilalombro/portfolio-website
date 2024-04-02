@@ -84,3 +84,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@supports (min-height: 100dvh) {
+  body {
+      min-height: 100dvh;
+  }
+}
